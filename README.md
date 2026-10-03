@@ -40,8 +40,11 @@ Every number below is reproduced by one command in the linked repo, on a held-ou
 
 ### 🛠️ Predictive Failure &amp; Root-Cause Agent &nbsp;[code](https://github.com/aayshinde/failure-rca-agent) · [**▶ try it live**](https://aayshinde.github.io/failure-rca-agent/)
 
-Scores a 100-machine fleet hour by hour, warns about failures about a day ahead, then a LangGraph agent explains the
-likely root cause and cites the evidence it used. Drag the clock, click a machine, replay a real failure.
+> **In 30 seconds:** an early-warning system for factory machines. It warns the maintenance team about a day before a machine breaks, and when one does break, an AI assistant explains the most likely cause and shows the evidence.
+
+- **The problem:** unplanned breakdowns are expensive, and the clues are scattered across sensor readings, error logs and repair manuals.
+- **What I built:** models that watch 100 machines (simulated) and flag the ones likely to fail in the next 24 hours, plus an AI agent that investigates a failure by pulling the sensor data, the error log and the right manual pages, then answers with citations.
+- **The result:** it catches 85% of failures with about 20 hours of notice and few false alarms (0.18 per machine per month). The AI agent's answers are more often backed by evidence than a simpler version's.
 
 <p align="center"><a href="https://aayshinde.github.io/failure-rca-agent/"><img src="https://raw.githubusercontent.com/aayshinde/failure-rca-agent/main/docs/img/demo.gif" width="720" alt="Interactive fleet reliability console"></a></p>
 
@@ -49,8 +52,11 @@ likely root cause and cites the evidence it used. Drag the clock, click a machin
 
 ### 🎫 RAG Support Insights &amp; LLM Evaluation &nbsp;[code](https://github.com/aayshinde/rag-support-insights) · [**▶ try it live**](https://aayshinde.github.io/rag-support-insights/)
 
-Triages support tickets with retrieval and a two-stage abstention gate: when the evidence is weak it **escalates to a
-human instead of guessing**. Includes baselines, stress tests and failure analysis.
+> **In 30 seconds:** an AI helper for customer-support teams. It reads a new ticket, finds similar past tickets and how they were solved, and suggests the next step. If it isn't confident, it hands the ticket to a person instead of guessing.
+
+- **The problem:** support agents spend time hunting for how similar issues were handled, and an AI that guesses wrong makes things worse.
+- **What I built:** a search over about 28,000 past tickets that classifies the new issue and recommends an action based on how similar tickets were resolved, with a two-stage check that sends weak-evidence cases to a human.
+- **The result:** a working dashboard and API, plus a test harness that measures how relevant and how well-grounded the answers are, so quality is measured rather than assumed.
 
 **Stack:** LangChain · FAISS · FastAPI · Streamlit · Ollama
 

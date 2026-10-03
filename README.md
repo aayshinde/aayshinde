@@ -54,14 +54,6 @@ human instead of guessing**. Includes baselines, stress tests and failure analys
 
 **Stack:** LangChain · FAISS · FastAPI · Streamlit · Ollama
 
-## What didn't work (and what I did about it)
-
-The projects above document their failures in the README, because that is where the engineering judgment shows.
-
-- **A simple model matched the fancy one.** On NASA's turbofan benchmark a logistic regression tied XGBoost (AUROC 0.99). I report it and argue where the complexity does pay off.
-- **My redesigned agent got worse at one task.** The LangGraph workflow beat the baseline on retrieval and grounding but missed 2 of 3 impending failures on risk questions. It is in the README, not buried.
-- **My judge was the same model as my agent.** That flatters both, so the write-up says so and names the fix.
-
 ## Skills
 
 **Programming & data**<br>

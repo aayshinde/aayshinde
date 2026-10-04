@@ -15,7 +15,7 @@ GenAI and classical ML for financial services and manufacturing · RAG · anomal
 
 ## About me
 
-I'm an ML engineer who cares less about a headline metric and more about whether a system holds up when someone relies on it.
+I'm an AI/ML engineer who cares less about a headline metric and more about whether a system holds up when someone relies on it.
 
 - 🏦 **Now:** AI/ML Engineer at **JPMorgan Chase**: contributing to a RAG assistant over internal policy documentation (AWS Bedrock, OpenSearch) with ownership of retrieval evaluation and chunking, tuning gradient-boosted anomaly and risk classifiers with assumptions documented for Model Risk review, and building PySpark feature pipelines on EMR with Airflow and MLflow
 - 🏭 **Before:** ML Engineer at **Siemens**: predictive-maintenance models (LSTM, XGBoost) on industrial IoT telemetry, PySpark pipelines, containerized real-time inference on Azure AKS, and CI/CD for model releases

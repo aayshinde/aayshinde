@@ -3,6 +3,7 @@
 GenAI and classical ML for financial services and manufacturing · RAG · anomaly detection · honest evaluation</p>
 
 <p align="center">
+  <a href="https://aayshinde.github.io/"><img src="https://img.shields.io/badge/Portfolio-aayshinde.github.io-111827?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
   <a href="https://www.linkedin.com/in/ayush-shinde-70295b344/"><img src="https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:ayush.s@itjobinbox.com"><img src="https://img.shields.io/badge/Email-ayush.s%40itjobinbox.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   <a href="https://github.com/aayshinde/aayshinde/blob/main/Ayush_Shinde_Resume.pdf"><img src="https://img.shields.io/badge/Resume-PDF-2563EB?style=for-the-badge&logo=readme&logoColor=white" alt="Resume"></a>
@@ -55,8 +56,8 @@ Every number below is reproduced by one command in the linked repo, on a held-ou
 > **In 30 seconds:** an AI helper for customer-support teams. It reads a new ticket, finds similar past tickets and how they were solved, and suggests the next step. If it isn't confident, it hands the ticket to a person instead of guessing.
 
 - **The problem:** support agents spend time hunting for how similar issues were handled, and an AI that guesses wrong makes things worse.
-- **What I built:** a search over about 28,000 past tickets that classifies the new issue and recommends an action based on how similar tickets were resolved, with a two-stage check that sends weak-evidence cases to a human.
-- **The result:** a working dashboard and API, plus a test harness that measures how relevant and how well-grounded the answers are, so quality is measured rather than assumed.
+- **What I built:** a search over 48,178 past tickets that classifies the new issue and recommends an action based on how similar tickets were resolved, with a two-stage check that sends weak-evidence cases to a human.
+- **The result:** 91.4% correct on the tickets it answers (87% of queries), and 98% of out-of-scope messages escalated to a human instead of answered, measured on held-out tickets.
 
 **Stack:** LangChain · FAISS · FastAPI · Streamlit · Ollama
 
@@ -126,4 +127,4 @@ Every number below is reproduced by one command in the linked repo, on a held-ou
 ## Let's connect
 
 Open to talking about ML systems, evaluation, and fraud or predictive-maintenance problems.
-**[LinkedIn](https://www.linkedin.com/in/ayush-shinde-70295b344/)** · **[Email](mailto:ayush.s@itjobinbox.com)** · **[Resume](https://github.com/aayshinde/aayshinde/blob/main/Ayush_Shinde_Resume.pdf)**
+**[Portfolio](https://aayshinde.github.io/)** · **[LinkedIn](https://www.linkedin.com/in/ayush-shinde-70295b344/)** · **[Email](mailto:ayush.s@itjobinbox.com)** · **[Resume](https://github.com/aayshinde/aayshinde/blob/main/Ayush_Shinde_Resume.pdf)**

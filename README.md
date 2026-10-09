@@ -63,6 +63,8 @@ Every number below is reproduced by one command in the linked repo, on a held-ou
 - **What I built:** a search over 48,178 past tickets that classifies the new issue and recommends an action based on how similar tickets were resolved, with a two-stage check that sends weak-evidence cases to a human.
 - **The result:** 91.4% correct on the tickets it answers (87% of queries), and 98% of out-of-scope messages escalated to a human instead of answered, measured on held-out tickets.
 
+<p align="center"><a href="https://aayshinde.github.io/rag-support-insights/"><img src="https://raw.githubusercontent.com/aayshinde/aayshinde/main/docs/rag-demo.gif" width="720" alt="Walkthrough of the RAG triage demo: the answer-or-escalate flow, the confidence threshold trade-off, and an example ticket that is escalated to a human"></a></p>
+
 **Stack:** LangChain · FAISS · FastAPI · Streamlit · Ollama
 
 ### 🧪 TrialScope: Clinical-Trial Risk Prediction &nbsp;[code](https://github.com/aayshinde/trialscope) · [**▶ try it live**](https://trialscope-6ysgwfp6gstc7h7v8gxkan.streamlit.app/)

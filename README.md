@@ -9,6 +9,7 @@ GenAI and classical ML for financial services and manufacturing · RAG · anomal
   <a href="https://github.com/aayshinde/aayshinde/blob/main/Ayush_Shinde_Resume.pdf"><img src="https://img.shields.io/badge/Resume-PDF-2563EB?style=for-the-badge&logo=readme&logoColor=white" alt="Resume"></a>
   <a href="https://aayshinde.github.io/failure-rca-agent/"><img src="https://img.shields.io/badge/Live%20demo-failure%20agent-6ea8ff?style=for-the-badge" alt="Live demo"></a>
   <a href="https://aayshinde.github.io/rag-support-insights/"><img src="https://img.shields.io/badge/Live%20demo-RAG%20triage-b18cff?style=for-the-badge" alt="Live demo"></a>
+  <a href="https://trialscope-6ysgwfp6gstc7h7v8gxkan.streamlit.app/"><img src="https://img.shields.io/badge/Live%20demo-clinical%20trials-2f6fed?style=for-the-badge" alt="Live demo"></a>
 </p>
 
 ---
@@ -60,6 +61,18 @@ Every number below is reproduced by one command in the linked repo, on a held-ou
 - **The result:** 91.4% correct on the tickets it answers (87% of queries), and 98% of out-of-scope messages escalated to a human instead of answered, measured on held-out tickets.
 
 **Stack:** LangChain · FAISS · FastAPI · Streamlit · Ollama
+
+### 🧪 TrialScope: Clinical-Trial Risk Prediction &nbsp;[code](https://github.com/aayshinde/trialscope) · [**▶ try it live**](https://trialscope-6ysgwfp6gstc7h7v8gxkan.streamlit.app/)
+
+> **In 30 seconds:** a tool that looks at a clinical trial the day it starts and estimates how likely it is to be stopped early or run late, then shows why. You can even edit a trial's eligibility rules and watch the estimate move.
+
+- **The problem:** trials that stop early or drag on cost sponsors a great deal, and the warning signs are buried in registry text.
+- **What I built:** a data pipeline over 30,000 real ClinicalTrials.gov trials, models that score each trial using only what was known when it started, and a dashboard with explanations, a what-if tool and a plain-English assistant that runs free on a local model.
+- **The result:** 0.71 AUROC on 2017-2019 trials it never saw (a simple baseline gets 0.64), and the riskiest 10% of trials hold 27% of the eventual failures. A deliberately leaky version scores 0.82, which I show to explain why that number would mislead. It is a ranking aid, not a forecast for any single trial.
+
+<p align="center"><a href="https://trialscope-6ysgwfp6gstc7h7v8gxkan.streamlit.app/"><img src="https://raw.githubusercontent.com/aayshinde/trialscope/main/docs/img/overview.png" width="720" alt="TrialScope dashboard overview"></a></p>
+
+**Stack:** XGBoost · lifelines · SHAP · dbt · DuckDB · Prefect · MLflow · LangGraph · Streamlit · Ollama (free local LLM)
 
 ## Skills
 

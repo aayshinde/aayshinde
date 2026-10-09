@@ -35,8 +35,11 @@ Every number below is reproduced by one command in the linked repo, on a held-ou
     <td align="center"><b>0.18</b><br><sub>false alerts / machine / month</sub></td>
     <td align="center"><b>27% → 92%</b><br><sub>doc-retrieval hit rate, agent redesign</sub></td>
     <td align="center"><b>15.6% → 3.1%</b><br><sub>unsupported LLM claims</sub></td>
+    <td align="center"><b>2.7×</b><br><sub>more clinical-trial failures caught in the riskiest 10% than chance</sub></td>
   </tr>
 </table>
+
+<sub>The clinical-trial figure is from <a href="https://github.com/aayshinde/trialscope">TrialScope</a>, tested on years the model never saw. It uses a snapshot of live registry data, so a re-run will differ slightly.</sub>
 
 ## Featured projects
 
@@ -90,6 +93,10 @@ Every number below is reproduced by one command in the linked repo, on a held-ou
 <img src="https://img.shields.io/badge/Time--series-444?style=flat" alt="Time--series">
 <img src="https://img.shields.io/badge/Feature%20engineering-444?style=flat" alt="Feature%20engineering">
 <img src="https://img.shields.io/badge/Model%20evaluation-444?style=flat" alt="Model%20evaluation">
+<img src="https://img.shields.io/badge/Survival%20analysis-444?style=flat" alt="Survival%20analysis">
+<img src="https://img.shields.io/badge/SHAP%20explainability-444?style=flat" alt="SHAP%20explainability">
+<img src="https://img.shields.io/badge/Probability%20calibration-444?style=flat" alt="Probability%20calibration">
+<img src="https://img.shields.io/badge/Leakage-safe%20validation-444?style=flat" alt="Leakage-safe%20validation">
 
 **Deep learning**<br>
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" alt="PyTorch">
@@ -107,12 +114,17 @@ Every number below is reproduced by one command in the linked repo, on a held-ou
 <img src="https://img.shields.io/badge/OpenSearch-005EB8?style=flat&logo=opensearch&logoColor=white" alt="OpenSearch">
 <img src="https://img.shields.io/badge/Pinecone-000?style=flat&logo=pinecone&logoColor=white" alt="Pinecone">
 <img src="https://img.shields.io/badge/LLM%20evaluation-444?style=flat" alt="LLM%20evaluation">
+<img src="https://img.shields.io/badge/Ollama%20(local%20LLMs)-000?style=flat&logo=ollama&logoColor=white" alt="Ollama%20(local%20LLMs)">
 
 **Data engineering**<br>
 <img src="https://img.shields.io/badge/Airflow-017CEE?style=flat&logo=apacheairflow&logoColor=white" alt="Airflow">
 <img src="https://img.shields.io/badge/Spark-E25A1C?style=flat&logo=apachespark&logoColor=white" alt="Spark">
 <img src="https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white" alt="Kafka">
 <img src="https://img.shields.io/badge/AWS%20EMR-232F3E?style=flat&logo=amazonwebservices&logoColor=white" alt="AWS%20EMR">
+<img src="https://img.shields.io/badge/dbt-FF694B?style=flat&logo=dbt&logoColor=white" alt="dbt">
+<img src="https://img.shields.io/badge/DuckDB-FFF000?style=flat&logo=duckdb&logoColor=black" alt="DuckDB">
+<img src="https://img.shields.io/badge/Prefect-070E10?style=flat&logo=prefect&logoColor=white" alt="Prefect">
+<img src="https://img.shields.io/badge/Data-quality%20tests-444?style=flat" alt="Data-quality%20tests">
 
 **MLOps & deployment**<br>
 <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white" alt="MLflow">
@@ -123,6 +135,7 @@ Every number below is reproduced by one command in the linked repo, on a held-ou
 <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white" alt="Jenkins">
 <img src="https://img.shields.io/badge/Weights%20%26%20Biases-FFBE00?style=flat&logo=weightsandbiases&logoColor=white" alt="Weights%20%26%20Biases">
 <img src="https://img.shields.io/badge/Drift%20monitoring-444?style=flat" alt="Drift%20monitoring">
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white" alt="Streamlit">
 
 **Cloud**<br>
 <img src="https://img.shields.io/badge/AWS%20Bedrock%20%7C%20SageMaker-232F3E?style=flat&logo=amazonwebservices&logoColor=white" alt="AWS%20Bedrock%20%7C%20SageMaker">
@@ -139,5 +152,5 @@ Every number below is reproduced by one command in the linked repo, on a held-ou
 
 ## Let's connect
 
-Open to talking about ML systems, evaluation, and fraud or predictive-maintenance problems.
+Open to talking about ML systems, evaluation, and fraud, predictive-maintenance or clinical-trial risk problems.
 **[Portfolio](https://aayshinde.github.io/)** · **[LinkedIn](https://www.linkedin.com/in/ayush-shinde-70295b344/)** · **[Email](mailto:ayush.s@itjobinbox.com)** · **[Resume](https://github.com/aayshinde/aayshinde/blob/main/Ayush_Shinde_Resume.pdf)**

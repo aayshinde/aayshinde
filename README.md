@@ -16,7 +16,7 @@ LLM agents · RAG · enterprise API integrations · ML in production · honest e
 
 ## About me
 
-I'm an AI/ML engineer who cares less about a headline metric and more about whether a system holds up when someone relies on it.
+I'm a forward deployed engineer who builds LLM agents and ML systems, and I care less about a headline metric and more about whether a system holds up when someone relies on it.
 
 - 🏢 **Now:** Forward Deployed Engineer at **ServiceNow**: connecting LLM agents to ServiceNow APIs for P1/P2 incident intake, CMDB asset lookups and ticket updates (mean time to resolve down from 45 minutes to under 10), a graph-aware RAG workflow over CMDB asset relationships for incident triage (92% classification accuracy), RBAC and human approval for destructive agent actions, and a 230-scenario evaluation suite that tests for wrong classifications, missing asset relationships and unsafe actions before deployment
 - 🏭 **Before:** ML Engineer at **Siemens**: LSTM and XGBoost failure-detection models across 5 plants (94% fault-detection accuracy, 27% less unplanned downtime), PySpark pipelines over 500GB+ of sensor data, containerized inference on Docker and Azure AKS for 2,000+ assets, an AWS migration (S3, EMR, SageMaker), and CI/CD with GitHub Actions

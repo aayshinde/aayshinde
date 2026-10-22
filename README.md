@@ -10,6 +10,7 @@ LLM agents · RAG · enterprise API integrations · ML in production · honest e
   <a href="https://aayshinde.github.io/failure-rca-agent/"><img src="https://img.shields.io/badge/Live%20demo-failure%20agent-6ea8ff?style=for-the-badge" alt="Live demo"></a>
   <a href="https://aayshinde.github.io/rag-support-insights/"><img src="https://img.shields.io/badge/Live%20demo-RAG%20triage-b18cff?style=for-the-badge" alt="Live demo"></a>
   <a href="https://trialscope-6ysgwfp6gstc7h7v8gxkan.streamlit.app/"><img src="https://img.shields.io/badge/Live%20demo-clinical%20trials-2f6fed?style=for-the-badge" alt="Live demo"></a>
+  <a href="https://incident-agent-guardrails-apyt254qfmddbycpvbhtub.streamlit.app/"><img src="https://img.shields.io/badge/Live%20demo-agent%20guardrails-d64545?style=for-the-badge" alt="Live demo"></a>
 </p>
 
 ---
@@ -36,12 +37,25 @@ Every number below is reproduced by one command in the linked repo, on a held-ou
     <td align="center"><b>27% → 92%</b><br><sub>doc-retrieval hit rate, agent redesign</sub></td>
     <td align="center"><b>15.6% → 3.1%</b><br><sub>unsupported LLM claims</sub></td>
     <td align="center"><b>2.7×</b><br><sub>more clinical-trial failures caught in the riskiest 10% than chance</sub></td>
+    <td align="center"><b>24 / 24</b><br><sub>attacks on an AI agent stopped (33 unsafe actions with the guardrails off)</sub></td>
   </tr>
 </table>
 
-<sub>The clinical-trial figure is from <a href="https://github.com/aayshinde/trialscope">TrialScope</a>, tested on years the model never saw. It uses a snapshot of live registry data, so a re-run will differ slightly.</sub>
+<sub>The clinical-trial figure is from <a href="https://github.com/aayshinde/trialscope">TrialScope</a>, tested on years the model never saw. It uses a snapshot of live registry data, so a re-run will differ slightly. The guardrails figure is from <a href="https://github.com/aayshinde/incident-agent-guardrails">Incident Agent Guardrails</a>, on synthetic data, and is fully reproducible with one command.</sub>
 
 ## Featured projects
+
+### 🛡️ Incident Agent Guardrails &nbsp;[code](https://github.com/aayshinde/incident-agent-guardrails) · [**▶ try it live**](https://incident-agent-guardrails-apyt254qfmddbycpvbhtub.streamlit.app/)
+
+> **In 30 seconds:** an AI agent that triages IT incidents, built so it cannot be talked into doing damage. Every safety rule is enforced by the system the agent calls, not by its prompt, and I attack it to prove it.
+
+- **The problem:** putting an AI agent in front of enterprise systems is easy. Making it safe enough that an operations team will trust it is the hard part.
+- **What I built:** a mock enterprise API with role-based access, human approval (two people for the most critical systems), approval expiry and secret redaction, all set in a readable policy file; an agent with tools and graph-aware retrieval; and rollout stages from shadow mode to limited autonomy, with a [rollout playbook](https://github.com/aayshinde/incident-agent-guardrails/blob/main/docs/rollout-playbook.md).
+- **The result:** 24 of 24 attacks stopped, including 8 hidden inside alerts, notes and past incidents (the harder case). With the guardrails off, the same agent causes 33 unsafe actions. A real local LLM found a hole in my own rules; I fixed it and added a test. All data is synthetic.
+
+<p align="center"><a href="https://incident-agent-guardrails-apyt254qfmddbycpvbhtub.streamlit.app/"><img src="https://raw.githubusercontent.com/aayshinde/incident-agent-guardrails/main/docs/img/walkthrough.gif" width="720" alt="Walkthrough: an agent triages an incident, a human approves a restart, an attack hidden in an alert is stopped, and the three rollout stages"></a></p>
+
+**Stack:** Python · FastAPI · NetworkX · scikit-learn · Streamlit · Ollama (free local LLM) · pytest · GitHub Actions
 
 ### 🛠️ Predictive Failure &amp; Root-Cause Agent &nbsp;[code](https://github.com/aayshinde/failure-rca-agent) · [**▶ try it live**](https://aayshinde.github.io/failure-rca-agent/)
 
